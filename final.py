@@ -1,7 +1,8 @@
+import os
 from flask import Flask, render_template, request
 import giphypop
 from googlefinance import getQuotes
-
+ 
 # g = giphypop.Giphy()
 # results = g.search('cats') # returns a list of objects
 # for result in results:
@@ -33,4 +34,6 @@ def results():
 	# 	url.append(result.url)
 	return render_template('finalresults.html',searchterm = search_term, results=results)
 
-app.run(debug=True)
+#app.run(debug=True)
+port = int(os.environ.get("PORT", 5000))
+app.run(host="0.0.0.0", port=port)
