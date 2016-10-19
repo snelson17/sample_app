@@ -1,7 +1,5 @@
 
-#IPPIPPIPP
 
-this is a sample application 
 
-by [sam](http://theringer.com)
+by [sam](https://cbs-ipp-g14.herokuapp.com/)
 
